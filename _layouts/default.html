@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
+    
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="/main.css">
+    </head>
 
-  {% include head.html %}
+    <body>
+	
+	{% include header.html %}
+	
+	<div class="page-content">
+	    <div class="wrapper">
+		{{ content }}
+	    </div>
+	</div>
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
+	<div class="wrapper">
+	    <div class="pagination">
+		{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="button">Previous</a>
+		{% endif %}
+		<span class="button">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="button">Next</a>
+		{% endif %}
+	    </div>
+	</div>
+	
+	{% include footer.html %}
+    </body>
 
 </html>
