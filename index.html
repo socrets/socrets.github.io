@@ -2,17 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+<div>
 
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
 	  <div class="post-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	  </div>
-	<span class="post-byline">Written by Socrets | <span style="color: gray;">{{post.date | date: "%b %-d, %Y"}}</span></span>
-	<p style="margin-top: 10px;">{{ post.content | strip_html | truncate: 300}}</p>
+	  <span style="color: gray;">{{post.date | date: "%b %-d, %Y"}} | <span>{{ post.category }}</span></span>
+	  <p style="margin-top: 10px;">{{ post.content | strip_html | truncate: 300}}</p>
       </li>
-    {% endfor %}
+      {% endfor %}
   </ul>
+</div>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="button">Previous</a>
+    {% endif %}
+    <span class="button">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="button">Next</a>
+    {% endif %}
 </div>

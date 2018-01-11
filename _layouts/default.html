@@ -17,18 +17,6 @@
 		{{ content }}
 	    </div>
 	</div>
-
-	<div class="wrapper">
-	    <div class="pagination">
-		{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" class="button">Previous</a>
-		{% endif %}
-		<span class="button">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}" class="button">Next</a>
-		{% endif %}
-	    </div>
-	</div>
 	
 	{% include footer.html %}
     </body>
