@@ -36,6 +36,6 @@ category: Engineering
 
 BAR有SUPPLY AIR PORT和CONTROL AIR PORT，BAR的CONTROL AIR PORT和PRSOV上的CONTROL AIR PORT相连,其实就是SUPPLY PRESSURE经过BAR降压之后到CONTROL PRESSURE其实就是到PRSOV的A腔的压力来打开PRSOV．理解了这一点引气健康测试设备也就是氮气瓶连接到SUPPLY AIR PORT，另一边把BAR的CONTROL PORT和PRSOV的CONTROL PORT中间用带压力表的管路连接起来．举个例子如果你提供SUPPLY PRESSURE(Ps)75psi,CONTROL PRESSURE(Pc)应该在20-28psi（不同的件号的BAR这些具体数值可能不同，具体参考AMM），这样可以测试出BAR是好的，然后看PRSOV有没有完全打开（或者接近完全打开），可以看出PRSOV是否工作正常．测试HSR，HSV，PCCV(预冷器控制活门)的原理和上述是相似的．
 
-碰到引气系统的故障，需要了解引气故障发生的阶段，做引气健康测试确定故障件，不过就航线的经验来看预冷器控制活门，预冷器，390F,PRSOV更换的概率是比较高的．若是线路故障BAR上的插头，AACU更换的概率比较大．
+碰到引气系统的故障，需要了解引气故障发生的阶段，做引气健康测试确定故障件，不过就航线的经验来看预冷器控制活门，预冷器，390F,PRSOV更换的概率是比较高的．若是线路故障BAR上的插头，ACAU更换的概率比较大．
 
 以上就是引气系统的总结，由于水平有限，难免会有错误，敬请指正
