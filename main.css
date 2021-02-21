@@ -1,7 +1,6 @@
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑",
-  STXIhei, "华文细黑", serif;
+  font-family: auto;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -10,6 +9,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  line-height: 30px;
 }
 
 a {
